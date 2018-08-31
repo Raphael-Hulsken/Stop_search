@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<Variables>
+<Variable tag="yield" label="Yield" unit="" nbins="1" min="-0.5" max="0.5"/>
+<Variable tag="MET" label="MET" unit="MET" nbins="4" min="250" max="650"/>
+<Variable tag="MT2W" label="MT2W" unit="MT2W" nbins="10" min="0" max="500"/>
+<Variable tag="MT" label="MT" unit="MT" nbins="20" min="0" max="1000"/>
+<Variable tag="nJets" label="nJets" unit="nJets" nbins="10" min="0.5" max="10.5"/>
+<Variable tag="nBJets" label="nBJets" unit="nBJets" nbins="5" min="0.5" max="5.5"/>
+<Variable tag="topnessMod" label="topnessMod" unit="topnessMod" nbins="20" min="-20" max="20"/>
+<Variable tag="dphi" label="dphi" unit="dphi" nbins="7" min="0" max="3.5"/>
+<Variable tag="Mlb" label="Mlb" unit="Mlb" nbins="10" min="0" max="500"/>
+<Variable tag="lep1_pt" label="lep1_pt" unit="lep1_pt" nbins="10" min="0" max="500"/>
+<Variable tag="StopMass" label="stop mass" unit="GeV" nbins="61" min="-12.5" max="1512.5"/>
+<Variable tag="NeutralinoMass" label="lsp mass" unit="GeV" nbins="41" min="-12.5" max="1012.5"/>
+<Variable tag="jetB_pt" label="jetB_pt" unit="jetB_pt" nbins="10" min="0" max="500"/>
+<Variable tag="pt_lead_jet" label="pt_lead_jet" unit="pt_lead_jet" nbins="16" min="0" max="800"/>
+<Variable tag="jet_b_indetif" label="jet_b_indetif" unit="jet_b_indetif" nbins="10" min="0" max="1"/>
+<Variable tag="dphiLep" label="dphiLep" unit="dphiLep" nbins="7" min="0" max="3.5"/>
+</Variables>
+<Regions>
+<Region tag="baseline" label="baseline" />
+<Region tag="Baseline" label="Baseline" />
+<Region tag="SR1l" label="SR1l" />
+<Region tag="test" label="test" />
+<Region tag="A1" label="A1" />
+<Region tag="A2" label="A2" />
+<Region tag="A3" label="A3" />
+<Region tag="A4" label="A4" />
+<Region tag="B1" label="B1" />
+<Region tag="B2" label="B2" />
+<Region tag="B3" label="B3" />
+<Region tag="C1" label="C1" />
+<Region tag="C2" label="C2" />
+<Region tag="C3" label="C3" />
+<Region tag="C4" label="C4" />
+<Region tag="C5" label="C5" />
+<Region tag="D1" label="D1" />
+<Region tag="D2" label="D2" />
+<Region tag="D3" label="D3" />
+<Region tag="D4" label="D4" />
+<Region tag="E1" label="E1" />
+<Region tag="E2" label="E2" />
+<Region tag="E3" label="E3" />
+<Region tag="F1" label="F1" />
+<Region tag="F2" label="F2" />
+<Region tag="G1" label="G1" />
+<Region tag="G2" label="G2" />
+<Region tag="G3" label="G3" />
+<Region tag="G4" label="G4" />
+<Region tag="H1" label="H1" />
+<Region tag="H2" label="H2" />
+<Region tag="I1" label="I1" />
+<Region tag="I2" label="I2" />
+<Region tag="I3" label="I3" />
+<Region tag="I4" label="I4" />
+<Region tag="C1CMPR" label="C1CMPR" />
+<Region tag="C2CMPR" label="C2CMPR" />
+<Region tag="C3CMPR" label="C3CMPR" />
+<Region tag="C4CMPR" label="C4CMPR" />
+<Region tag="C5CMPR" label="C5CMPR" />
+<Region tag="D1CMPR" label="D1CMPR" />
+<Region tag="D2CMPR" label="D2CMPR" />
+<Region tag="D3CMPR" label="D3CMPR" />
+<Region tag="D4CMPR" label="D4CMPR" />
+<Region tag="E1CMPR" label="E1CMPR" />
+<Region tag="E2CMPR" label="E2CMPR" />
+<Region tag="E3CMPR" label="E3CMPR" />
+<Region tag="F1CMPR" label="F1CMPR" />
+<Region tag="F2CMPR" label="F2CMPR" />
+<Region tag="G1CMPR" label="G1CMPR" />
+<Region tag="G2CMPR" label="G2CMPR" />
+<Region tag="G3CMPR" label="G3CMPR" />
+<Region tag="G4CMPR" label="G4CMPR" />
+<Region tag="H1CMPR" label="H1CMPR" />
+<Region tag="H2CMPR" label="H2CMPR" />
+<Region tag="I108" label="I108" />
+<Region tag="I208" label="I208" />
+<Region tag="I308" label="I308" />
+<Region tag="I408" label="I408" />
+<Region tag="A" label="A" />
+<Region tag="B" label="B" />
+<Region tag="C" label="C" />
+<Region tag="D" label="D" />
+<Region tag="E" label="E" />
+<Region tag="F" label="F" />
+<Region tag="G" label="G" />
+<Region tag="H" label="H" />
+<Region tag="I" label="I" />
+<Region tag="all_Event" label="all_Event" />
+<Region tag="NJets3_Modtopness" label="NJets3_Modtopness" />
+<Region tag="NJets3_ModtopnessA" label="NJets3_ModtopnessA" />
+<Region tag="NJets3_ModtopnessB" label="NJets3_ModtopnessB" />
+<Region tag="NJets3_Mlb" label="NJets3_Mlb" />
+<Region tag="NJets3_MET" label="NJets3_MET" />
+<Region tag="NJets4_MET" label="NJets4_MET" />
+<Region tag="I_no_cut_MET" label="I_no_cut_MET" />
+<Region tag="I_no_cut_dphimet" label="I_no_cut_dphimet" />
+<Region tag="I_no_cut_dphilep" label="I_no_cut_dphilep" />
+<Region tag="I_no_cut_Ptlep" label="I_no_cut_Ptlep" />
+<Region tag="I_no_cut_NJets" label="I_no_cut_NJets" />
+<Region tag="I_no_cut_ident" label="I_no_cut_ident" />
+<Region tag="I_more_4" label="I_more_4" />
+<Region tag="I_more_3" label="I_more_3" />
+<Region tag="I_equal_4" label="I_equal_4" />
+<Region tag="I_equal_3" label="I_equal_3" />
+<Region tag="I_equal_34" label="I_equal_34" />
+<Region tag="I_equal_34_region1" label="I_equal_34_region1" />
+<Region tag="I_equal_34_region2" label="I_equal_34_region2" />
+<Region tag="I_equal_34_region3" label="I_equal_34_region3" />
+<Region tag="I_equal_34_region4" label="I_equal_34_region4" />
+<Region tag="I_equal_3_region1" label="I_equal_3_region1" />
+<Region tag="I_equal_3_region2" label="I_equal_3_region2" />
+<Region tag="I_equal_3_region3" label="I_equal_3_region3" />
+<Region tag="I_equal_3_region4" label="I_equal_3_region4" />
+<Region tag="I_equal_4_region1" label="I_equal_4_region1" />
+<Region tag="I_equal_4_region2" label="I_equal_4_region2" />
+<Region tag="I_equal_4_region3" label="I_equal_4_region3" />
+<Region tag="I_equal_4_region4" label="I_equal_4_region4" />
+<Region tag="I_equal_4_cut_Pt_300_region1" label="I_equal_4_cut_Pt_300_region1" />
+<Region tag="I_equal_4_cut_Pt_300_region2" label="I_equal_4_cut_Pt_300_region2" />
+<Region tag="I_equal_4_cut_Pt_300_region3" label="I_equal_4_cut_Pt_300_region3" />
+<Region tag="I_equal_4_cut_Pt_300_region4" label="I_equal_4_cut_Pt_300_region4" />
+<Region tag="I_equal_3_cut_Pt_300_region1" label="I_equal_3_cut_Pt_300_region1" />
+<Region tag="I_equal_3_cut_Pt_300_region2" label="I_equal_3_cut_Pt_300_region2" />
+<Region tag="I_equal_3_cut_Pt_300_region3" label="I_equal_3_cut_Pt_300_region3" />
+<Region tag="I_equal_3_cut_Pt_300_region4" label="I_equal_3_cut_Pt_300_region4" />
+<Region tag="I_equal_34_cut_Pt_300_region1" label="I_equal_34_cut_Pt_300_region1" />
+<Region tag="I_equal_34_cut_Pt_300_region2" label="I_equal_34_cut_Pt_300_region2" />
+<Region tag="I_equal_34_cut_Pt_300_region3" label="I_equal_34_cut_Pt_300_region3" />
+<Region tag="I_equal_34_cut_Pt_300_region4" label="I_equal_34_cut_Pt_300_region4" />
+<Region tag="I_equal_4_cut_Pt_300" label="I_equal_4_cut_Pt_300" />
+<Region tag="I_equal_3_cut_Pt_300" label="I_equal_3_cut_Pt_300" />
+<Region tag="I_equal_34_cut_Pt_300" label="I_equal_34_cut_Pt_300" />
+<Region tag="I_equal_34_cut_Pt_300_region1_looseB" label="I_equal_34_cut_Pt_300_region1_looseB" />
+<Region tag="I_equal_34_cut_Pt_300_region2_looseB" label="I_equal_34_cut_Pt_300_region2_looseB" />
+<Region tag="I_equal_34_cut_Pt_300_region3_looseB" label="I_equal_34_cut_Pt_300_region3_looseB" />
+<Region tag="I_equal_34_cut_Pt_300_region4_looseB" label="I_equal_34_cut_Pt_300_region4_looseB" />
+<Region tag="I_equal_34_cut_Pt_300_looseB" label="I_equal_34_cut_Pt_300_looseB" />
+<Region tag="I_equal_34_cut_Pt_300_modtop_Sup0" label="I_equal_34_cut_Pt_300_modtop_Sup0" />
+<Region tag="I_equal_34_cut_Pt_300_region1_modtop_Sup0" label="I_equal_34_cut_Pt_300_region1_modtop_Sup0" />
+<Region tag="I_equal_34_cut_Pt_300_region2_modtop_Sup0" label="I_equal_34_cut_Pt_300_region2_modtop_Sup0" />
+<Region tag="I_equal_34_cut_Pt_300_region3_modtop_Sup0" label="I_equal_34_cut_Pt_300_region3_modtop_Sup0" />
+<Region tag="I_equal_34_cut_Pt_300_region4_modtop_Sup0" label="I_equal_34_cut_Pt_300_region4_modtop_Sup0" />
+<Region tag="I_equal_34_cut_Pt_300_modtop_Inf0" label="I_equal_34_cut_Pt_300_modtop_Inf0" />
+<Region tag="I_equal_34_cut_Pt_300_region1_modtop_Inf0" label="I_equal_34_cut_Pt_300_region1_modtop_Inf0" />
+<Region tag="I_equal_34_cut_Pt_300_region2_modtop_Inf0" label="I_equal_34_cut_Pt_300_region2_modtop_Inf0" />
+<Region tag="I_equal_34_cut_Pt_300_region3_modtop_Inf0" label="I_equal_34_cut_Pt_300_region3_modtop_Inf0" />
+<Region tag="I_equal_34_cut_Pt_300_region4_modtop_Inf0" label="I_equal_34_cut_Pt_300_region4_modtop_Inf0" />
+<Region tag="I1_modtop_Sup0" label="I1_modtop_Sup0" />
+<Region tag="I2_modtop_Sup0" label="I2_modtop_Sup0" />
+<Region tag="I3_modtop_Sup0" label="I3_modtop_Sup0" />
+<Region tag="I4_modtop_Sup0" label="I4_modtop_Sup0" />
+<Region tag="I1_modtop_Inf0" label="I1_modtop_Inf0" />
+<Region tag="I2_modtop_Inf0" label="I2_modtop_Inf0" />
+<Region tag="I3_modtop_Inf0" label="I3_modtop_Inf0" />
+<Region tag="I4_modtop_Inf0" label="I4_modtop_Inf0" />
+<Region tag="I_topmod_Inf0" label="I_topmod_Inf0" />
+<Region tag="I_topmod_Sup0" label="I_topmod_Sup0" />
+<Region tag="I1_nocutB" label="I1_nocutB" />
+<Region tag="I2_nocutB" label="I2_nocutB" />
+<Region tag="I3_nocutB" label="I3_nocutB" />
+<Region tag="I4_nocutB" label="I4_nocutB" />
+<Region tag="I34_nocutB" label="I34_nocutB" />
+<Region tag="I_cut_tight" label="I_cut_tight" />
+<Region tag="I_cut_med" label="I_cut_med" />
+<Region tag="I_cut_loose" label="I_cut_loose" />
+<Region tag="I1_NocutPtLep" label="I1_NocutPtLep" />
+<Region tag="I2_NocutPtLep" label="I2_NocutPtLep" />
+<Region tag="I3_NocutPtLep" label="I3_NocutPtLep" />
+<Region tag="I4_NocutPtLep" label="I4_NocutPtLep" />
+</Regions>
+<Channels>
+<Channel tag="lepChannel" label="lepChannel" />
+</Channels>
+<ProcessClasses>
+<ProcessClass tag="bkgOneLepFromW" label="bkgOneLepFromW" type="background" color="600" />
+<ProcessClass tag="bkgOneLepFromTop" label="bkgOneLepFromTop" type="background" color="632" />
+<ProcessClass tag="bkgLostLepton" label="bkgLostLepton" type="background" color="418" />
+<ProcessClass tag="bkgZnunu" label="bkgZnunu" type="background" color="880" />
+<ProcessClass tag="2Chargino" label="2Chargino" type="signal" color="804" />
+<ProcessClass tag="mixt" label="mixt" type="signal" color="424" />
+<ProcessClass tag="NoChargino" label="NoChargino" type="signal" color="888" />
+</ProcessClasses>
+<Datasets>
+<Dataset tag="W1JetsToLNu_madgraph_pythia8_25ns" label="bkgOneLepFromW" processClass="bkgOneLepFromW" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="W2JetsToLNu_madgraph_pythia8_25ns" label="bkgOneLepFromW" processClass="bkgOneLepFromW" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="W3JetsToLNu_madgraph_pythia8_25ns" label="bkgOneLepFromW" processClass="bkgOneLepFromW" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="W4JetsToLNu_madgraph_pythia8_25ns" label="bkgOneLepFromW" processClass="bkgOneLepFromW" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="W1JetsToLNu_nupT200_madgraph_pythia8_25ns" label="bkgOneLepFromW" processClass="bkgOneLepFromW" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="W2JetsToLNu_nupT200_madgraph_pythia8_25ns" label="bkgOneLepFromW" processClass="bkgOneLepFromW" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="W3JetsToLNu_nupT200_madgraph_pythia8_25ns" label="bkgOneLepFromW" processClass="bkgOneLepFromW" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="W4JetsToLNu_nupT200_madgraph_pythia8_25ns" label="bkgOneLepFromW" processClass="bkgOneLepFromW" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="WWToLNuQQ_powheg_25ns" label="bkgOneLepFromW" processClass="bkgOneLepFromW" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="ttbar_singleLeptFromTbar_madgraph_pythia8_25ns" label="bkgOneLepFromTop" processClass="bkgOneLepFromTop" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="ttbar_singleLeptFromTbar_madgraph_pythia8_ext1_25ns" label="bkgOneLepFromTop" processClass="bkgOneLepFromTop" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="ttbar_singleLeptFromT_madgraph_pythia8_25ns" label="bkgOneLepFromTop" processClass="bkgOneLepFromTop" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="ttbar_singleLeptFromT_madgraph_pythia8_ext1_25ns" label="bkgOneLepFromTop" processClass="bkgOneLepFromTop" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="ttbar_diLept_madgraph_pythia8_25ns" label="bkgLostLepton" processClass="bkgLostLepton" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="ttbar_diLept_madgraph_pythia8_ext1_25ns" label="bkgLostLepton" processClass="bkgLostLepton" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="tbar_tch_4f_powheg_pythia8_inclDecays_25ns" label="bkgLostLepton" processClass="bkgLostLepton" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="t_sch_4f_amcnlo_pythia8_25ns" label="bkgLostLepton" processClass="bkgLostLepton" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="t_tW_5f_powheg_pythia8_noHadDecays_25ns" label="bkgLostLepton" processClass="bkgLostLepton" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="t_tbarW_5f_powheg_pythia8_noHadDecays_25ns" label="bkgLostLepton" processClass="bkgLostLepton" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="WWTo2l2Nu_powheg_25ns" label="bkgLostLepton" processClass="bkgLostLepton" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="ttWJets_13TeV_madgraphMLM" label="bkgLostLepton" processClass="bkgLostLepton" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="ZZTo2L2Nu_powheg_pythia8_25ns" label="bkgZnunu" processClass="bkgZnunu" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="ttZJets_13TeV_madgraphMLM" label="bkgZnunu" processClass="bkgZnunu" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="WZTo1L3Nu_amcnlo_pythia8_25ns" label="bkgZnunu" processClass="bkgZnunu" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="Signal_T2bW_1" label="2Chargino" processClass="2Chargino" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="Signal_T2bW_2" label="2Chargino" processClass="2Chargino" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="Signal_T2bW" label="2Chargino" processClass="2Chargino" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="Signal_T2tb" label="mixt" processClass="mixt" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="Signal_T2tb_1" label="mixt" processClass="mixt" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="Signal_T2tt_mStop_150to250" label="NoChargino" processClass="NoChargino" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="Signal_T2tt_mStop_250to350" label="NoChargino" processClass="NoChargino" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="Signal_T2tt_mStop_350to400" label="NoChargino" processClass="NoChargino" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="Signal_T2tt_mStop_350to400_1" label="NoChargino" processClass="NoChargino" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="Signal_T2tt_mStop_400to1200_1" label="NoChargino" processClass="NoChargino" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="Signal_T2tt_mStop_400to1200_2" label="NoChargino" processClass="NoChargino" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+<Dataset tag="Signal_T2tt_mStop_400to1200" label="NoChargino" processClass="NoChargino" XsecOrLumi="0" getTrueNumberOfEvents="0" />
+</Datasets>
