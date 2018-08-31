@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<body>
+ <Variables>
+   <Variable name="Njets" babyTuple="ngoodjets"/>
+   <Variable name="Nbjets" babyTuple="ngoodbtags"/>
+   <Variable name="MET"	  babyTuple="pfmet"/>
+   <Variable name="Mt" 	  babyTuple="mt_met_lep"/>
+   <Variable name="MT2W"  babyTuple="MT2W"/>
+   <Variable name="topnessMod"  babyTuple="topnessMod"/>
+   <Variable name="DPhi_jmet" babyTuple="dphi_ak4pfjets_met" />
+   <Variable name="lep1_MediumID" babyTuple="lep1_passMediumID" />
+   <Variable name="lep1_TightID" babyTuple="lep1_passTightID" />
+   <Variable name="lep1_pdgid" babyTuple="lep1_pdgid" />
+   <Variable name="nveto" babyTuple="nvetoleps"/>
+   <Variable name="trigger" babyTuple="trigger"/>
+ </Variables>
+
+ <Baseline  name="baseline" selection="MET>=250 and Mt>=150 and Njets>=2 and DPhi_jmet>=0.8 and trigger and topnessMod>-1000 and MT2W>=0" />
+ <Regions>
+  <Region name="SR1l" selection="Nbjets>=1 and OneLep() and ( (lep1_MediumID and abs(lep1_pdgid)==11) or (lep1_TightID and abs(lep1_pdgid)==13)) "/>
+  <Region name="CR1l" selection="Nbjets==0 and OneLep()"/>
+  <Region name="CR2l" selection="Nbjets>=1 and TwoLep()"/>
+ </Regions>
+ <Bins>
+  <Bin name="2j" label="2j" selection="Njets==2 and topnessMod>6.4" METbins="250,350,450,inf" />
+  <Bin name="3j" label="3j" selection="Njets==3 and MT2W>=200" METbins="250,350,450,550,inf" />
+  <Bin name="4jLow" label="4jLow" selection="Njets>=4 and MT2W!>200" METbins="250,350,450,inf" />
+  <Bin name="4jHighMT2W" label="4jLowMT2W" selection="Njets>=4 and MT2W>=200" METbins="250,350,450,550,650,inf" />
+ </Bins>
+</body>

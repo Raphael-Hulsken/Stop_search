@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<body>
+ <Variables>
+   <Variable name="Njets" babyTuple="ngoodjets"/>
+   <Variable name="Nbjets" babyTuple="ngoodbtags"/>
+   <Variable name="NLeps" babyTuple="ngoodleps"/>
+   <Variable name="TrackVeto" babyTuple="PassTrackVeto"/>
+   <Variable name="TauVeto" babyTuple="PassTauVeto"/>
+   <Variable name="MET"	  babyTuple="pfmet"/>
+   <Variable name="MT" 	  babyTuple="mt_met_lep"/>
+   <Variable name="MT2W"  babyTuple="MT2W"/>
+   <Variable name="tmod"  babyTuple="topness"/>
+   <Variable name="DPhi_jmet" babyTuple="dphi_ak4pfjets_met" />
+   <Variable name="Mlb" babyTuple="Mlb" />
+   <Variable name="lep1_MediumID" babyTuple="lep1_passMediumID" />
+   <Variable name="lep1_TightID" babyTuple="lep1_passTightID" />
+   <Variable name="lep1_pdgid" babyTuple="lep1_pdgid" />
+ </Variables>
+
+
+ <Baseline  name="baseline" selection="MET>=250 and MT>=150 and Njets>=2 and DPhi_jmet>=0.8" /> 
+ <Regions>
+  <Region name="SR1l" selection="Nbjets>=1 and NLeps==1 and TrackVeto and TauVeto and ( (lep1_MediumID and abs(lep1_pdgid)==11) or (lep1_TightID and abs(lep1_pdgid)==13) )"/>
+  <Region name="CR1l" selection="Nbjets==0 and NLeps==1 and TrackVeto and TauVeto"/>
+  <Region name="CR2l" selection="Nbjets>=1 and NLeps==2 and TrackVeto and TauVeto"/>
+ </Regions>
+ <Bins>
+  <Bin name="23jLowMlb" label="23jLowMlb" selection="Njets!>3 and tmod>7.5 and Mlb!>175" METbins="250,350,450,550,inf" />
+  <Bin name="23jHighMlb" label="23jHighMlb" selection="Njets!>3 and tmod>7.5 and Mlb>=175" METbins="250,350,450,550,inf" />
+  <Bin name="4jLowMT2WLowMlb" label="4jLowMT2WLowMlb" selection="Njets>=4 and tmod!>0 and Mlb!>175" METbins="250,350,450,550,650,inf" />
+  <Bin name="4jLowMT2WHighMlb" label="4jLowMT2WHighMlb" selection="Njets>=4 and tmod!>0 and Mlb>=175" METbins="250,350,450,550,inf" />
+  <Bin name="4jMidMT2WLowMlb" label="4jMidMT2WLowMlb" selection="Njets>=4 and tmod>=0  and tmod!>7.5 and Mlb!>175" METbins="250,350,450,inf" />
+  <Bin name="4jMidMT2WHighMlb" label="4jMidMT2WHighMlb" selection="Njets>=4 and tmod>=0  and tmod!>7.5 and Mlb>=175" METbins="250,400,inf" />
+  <Bin name="4jHighMT2WLowMlb" label="4jHighMT2WLowMlb" selection="Njets>=4 and tmod>=7.5 and Mlb!>175" METbins="250,350,450,600,inf" />
+  <Bin name="4jHighMT2WHighMlb" label="4jHighMT2WHighMlb" selection="Njets>=4 and tmod>=7.5 and Mlb>=175" METbins="250,400,650,inf" />
+ </Bins>
+</body>

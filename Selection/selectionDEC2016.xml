@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<body>
+ <Variables>
+   <Variable name="Njets" babyTuple="ngoodjets"/>
+   <Variable name="Nbjets" babyTuple="ngoodbtags"/>
+   <Variable name="NTightbjets" babyTuple="ntightbtags"/>
+   <Variable name="NLeps" babyTuple="ngoodleps"/>
+   <Variable name="TrackVeto" babyTuple="PassTrackVeto"/>
+   <Variable name="TauVeto" babyTuple="PassTauVeto"/>
+   <Variable name="MET"	  babyTuple="pfmet"/>
+   <Variable name="MT" 	  babyTuple="mt_met_lep"/>
+   <Variable name="MT2W"  babyTuple="MT2W"/>
+   <Variable name="tmod"  babyTuple="topnessMod"/>
+   <Variable name="DPhi_jmet" babyTuple="dphi_ak4pfjets_met" />
+   <Variable name="Mlb" babyTuple="Mlb" />
+   <Variable name="lep1_MediumID" babyTuple="lep1_passMediumID" />
+   <Variable name="lep1_TightID" babyTuple="lep1_passTightID" />
+   <Variable name="lep1_pdgid" babyTuple="lep1_pdgid" />
+   <Variable name="lep1_pt" babyTuple="lep1_pt" />
+   <Variable name="trigger" babyTuple="trigger"/>
+   <Variable name="NVLeps" babyTuple="nvetoleps"/>
+   <Variable name="dphiML" babyTuple="lep1_dphiMET"/>
+   <Variable name="passMEDbtag" babyTuple="ak4pfjets_passMEDbtag"/>
+ </Variables>
+
+
+ <Baseline  name="baseline" selection="MET>=250 and MT>=150 and Njets>=2 and DPhi_jmet>=0.5 and trigger and tmod>-1000 and Mlb>=0 and passGoodVtx() and passFilters()"  /> 
+ <Regions>
+  <Region name="SR1l" selection="Nbjets>=1 and NLeps==1 and NVLeps==1 and TrackVeto and TauVeto"/>
+ </Regions>
+ <Bins>
+  <Bin name="_A_" label="_A_" selection="Njets!>=3 and tmod>=10 and Mlb!>=175 and DPhi_jmet>=0.8" METbins="250,350,450,600,inf" />
+  <Bin name="_B_" label="_B_" selection="Njets!>=3 and tmod>=10 and Mlb>175 and DPhi_jmet>=0.8 and NTightbjets>=1" METbins="250,450,600,inf" />
+  <Bin name="_C_" label="_C_" selection="Njets>=4 and tmod!>=0 and Mlb!>=175 and DPhi_jmet>=0.8" METbins="250,350,450,550,650,inf" />
+  <Bin name="_D_" label="_D_" selection="Njets>=4 and tmod!>=0 and Mlb>175 and DPhi_jmet>=0.8 and NTightbjets>=1" METbins="250,350,450,550,inf" />
+  <Bin name="_E_" label="_E_" selection="Njets>=4 and tmod>0  and tmod!>=10 and Mlb!>=175 and DPhi_jmet>=0.8" METbins="250,350,550,inf" />
+  <Bin name="_F_" label="_F_" selection="Njets>=4 and tmod>0  and tmod!>=10 and Mlb>175 and DPhi_jmet>=0.8 and NTightbjets>=1" METbins="250,450,inf" />
+  <Bin name="_G_" label="_G_" selection="Njets>=4 and tmod>=10 and Mlb!>=175 and DPhi_jmet>=0.8" METbins="250,350,450,600,inf" />
+  <Bin name="_H_" label="_H_" selection="Njets>=4 and tmod>=10 and Mlb>175 and DPhi_jmet>=0.8 and NTightbjets>=1" METbins="250,450,inf" />
+  <Bin name="_I_" label="_I_" selection="Njets>=5 and lep1_pt!>150 and dphiML!>2 and passMEDbtag->at(0) == false" METbins="250,350,450,550,inf" />
+ </Bins>
+</body>
